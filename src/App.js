@@ -10,7 +10,6 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-
 import Header from "./components/Header";
 import MovieScreen from "./components/MovieScreen";
 import Watchlist from "./components/Watchlist";

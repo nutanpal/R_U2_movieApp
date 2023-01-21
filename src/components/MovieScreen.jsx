@@ -19,7 +19,7 @@ const MovieScreen = ({
   const movieDisplay = movieList.map((movie, index) => {
     // return <h2>{movie.original_title}</h2>
     return (
-    <MovieCard movie={movie} addMovie={addMovie} list ={list} removeMovie = {removeMovie}/>
+    <MovieCard movie={movie} addMovie={addMovie} list={list} removeMovie = {removeMovie}/>
     );
   });
 
@@ -32,8 +32,8 @@ const MovieScreen = ({
       <h3> Add a movie to your watchlist </h3>
 
       <div className="btn-container">
-        <button onClick={page !== 1 && decrement}>Previous</button>
-        <button onClick={increment}>Next</button>
+        <button onClick = {page !== 1 && decrement}>Previous</button>
+        <button onClick = {increment}>Next</button>
       </div>
       <div className="movie-container">{movieDisplay}</div>
     </div>

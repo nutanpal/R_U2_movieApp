@@ -9,7 +9,7 @@ const MovieCard = ({movie, list, addMovie, removeMovie}) => {
 
 //5.4  conditional rendering of btn : if inwatchlist len = 0 render Addmovie btn otherwise render remove btn
 const button = inWatchlist.length === 0 ? (
-  <button onclick ={() => addMovie(movie)}>Add to List</button>
+  <button onClick ={() => addMovie(movie)}>Add to List</button> // npfix: fixed onClick  c---C btn not working
   ) : (
     <button onClick = {() => removeMovie(movie)}>Remove from list</button>
   );
